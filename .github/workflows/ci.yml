@@ -31,7 +31,7 @@ jobs:
       - name: Run Bandit
         run: |
           pip install bandit
-          bandit -r app.py -ll -f txt -o bandit-report.txt
+          bandit -r app.py -f txt -o bandit-report.txt
           cat bandit-report.txt
       - name: Upload Bandit
         if: always()
